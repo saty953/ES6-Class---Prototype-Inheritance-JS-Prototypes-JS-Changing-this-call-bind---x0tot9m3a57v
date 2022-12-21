@@ -1,4 +1,4 @@
-class Api{
+class API{
     constructor(url){
         this.url=url;
         this.method="GET"
@@ -9,7 +9,7 @@ class Api{
         return this.#secure;
     }
 
-    updateUrl(url){
+    updateURL(url){
         this.url=url;
         this.#secure=url.startsWith("https")
     }
