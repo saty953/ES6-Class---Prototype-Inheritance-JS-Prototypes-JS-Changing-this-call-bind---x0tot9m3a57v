@@ -2,11 +2,11 @@ class Api{
     constructor(url){
         this.url=url;
         this.method="GET"
-        this.#secure=url.startsWith("https")
+        this.#isecure=url.startsWith("https")
     }
 
     isSecure(){
-        return this.#secure
+        return this.#secure;
     }
 
     updateUrl(url){
@@ -14,5 +14,4 @@ class Api{
         this.#secure=url.startsWith("https")
     }
 }
-
 module.exports = { API }
