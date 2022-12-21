@@ -2,7 +2,7 @@ class API{
     constructor(url){
         this.url=url;
         this.method="GET"
-        this.#isecure=url.startsWith("https")
+        this.#secure=url.startsWith("https")
     }
 
     isSecure(){
